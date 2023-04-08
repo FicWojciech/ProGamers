@@ -80,17 +80,19 @@ h2 {
   font-size: 24px;
 }
 
-.portfolio-hero {
-  position: relative;
-  color: #fff;
-  background-color: #fff;
-  color: black;
+.portfolio .carousel-item {
+  position: realtive;
+  height: 600px;
 }
-.portfolio-hero .carousel-item {
-  width: 100%;
-  height: 700px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
 }
 
 nav {
