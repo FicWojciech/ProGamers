@@ -97,7 +97,7 @@ h2 {
 
 nav {
   text-transform: uppercase;
-  z-index: 1;
+  z-index: 16;
   transition: background-color 2s;
 }
 nav .navbar-brand {
@@ -190,8 +190,8 @@ header .fa-chevron-down {
   }
 }
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
   .aboutus-hero {
     background-image: url(/IMG/procesor-large.jpg);
