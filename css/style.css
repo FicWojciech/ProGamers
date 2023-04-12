@@ -30,7 +30,7 @@ h2 {
 
 .underline-silver {
   margin: 0 auto 40px;
-  width: 100%;
+  width: 50%;
   height: 4px;
   background-color: silver;
 }
@@ -186,6 +186,25 @@ header .fa-chevron-down {
   transform: translate(-50%, -50%);
   font-size: 30px;
   color: #fff;
+}
+
+.prices h3 {
+  color: #039dff;
+  text-transform: uppercase;
+}
+.prices span {
+  font-weight: bold;
+}
+.prices .price {
+  font-weight: bold;
+  font-size: 22px;
+}
+.prices .more-info,
+.prices .text-muted {
+  text-align: center;
+}
+.prices .col-lg-6 {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 375px) {

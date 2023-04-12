@@ -31,7 +31,7 @@ h2 {
 
 .underline-silver {
 	margin: 0 auto 40px;
-	width: 100%;
+	width: 50%;
 	height: 4px;
 	background-color: $under-color;
 }
@@ -194,6 +194,27 @@ header {
 		transform: translate(-50%, -50%);
 		font-size: 30px;
 		color: $white-color;
+	}
+}
+
+.prices {
+	h3 {
+		color: $main-color;
+		text-transform: uppercase;
+	}
+	span {
+		font-weight: bold;
+	}
+	.price {
+		font-weight: bold;
+		font-size: 22px;
+	}
+	.more-info,
+	.text-muted {
+		text-align: center;
+	}
+	.col-lg-6 {
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 }
 
