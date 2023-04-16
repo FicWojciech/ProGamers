@@ -45,6 +45,7 @@ h2 {
 
 .btn-secondary:hover {
   background-color: #039dff;
+  border-color: #039dff;
 }
 
 .aboutus i {
@@ -195,7 +196,7 @@ header .fa-chevron-down {
 .prices span {
   font-weight: bold;
 }
-.prices .price {
+.prices .price-tag {
   font-weight: bold;
   font-size: 22px;
 }
@@ -203,8 +204,16 @@ header .fa-chevron-down {
 .prices .text-muted {
   text-align: center;
 }
-.prices .col-lg-6 {
-  background-color: rgba(0, 0, 0, 0.8);
+.prices .more-info a {
+  text-decoration: none;
+}
+.prices .price-box {
+  padding: 15px;
+  box-shadow: 6px 5px 5px 5px rgb(109, 104, 104);
+  transition: transform ease-in-out 0.4s;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 375px) {
@@ -229,6 +238,11 @@ header .fa-chevron-down {
   }
   .aboutus-hero {
     background-image: url(/IMG/procesor-large.jpg);
+  }
+  .price-box p,
+  .more-info p,
+  .text-muted p {
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
