@@ -227,6 +227,15 @@ header {
 	}
 }
 
+.team {
+	.card-footer {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
 @media (min-width: 375px) {
 	header {
 		h1 {
