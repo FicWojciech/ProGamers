@@ -228,32 +228,42 @@ header {
 }
 
 .team {
+	position: relative;
+	background-image: url('/IMG/team/room-2192484_1920.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+	h2 {
+		color: $bg-color;
+	}
+	.team-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+	.card {
+		transition: transform ease-in-out 0.4s;
+		text-align: center;
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+		i {
+			padding: 10px;
+		}
+	}
+	.card:hover {
+		transform: scale(0.9);
+	}
 	.card-footer {
 		text-align: center;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-	}
-	h2 {
-		color: $bg-color;
-	}
-	.card {
-		transition: transform ease-in-out 0.4s;
-		width: 300px;
-	}
-	.card:hover {
-		transform: scale(0.9);
-	}
-	.card-body {
-		height: 300px;
-		text-align: center;
-		padding: 15px 10px;
-	}
-	.card-img-top {
-		height: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
 	}
 }
 
