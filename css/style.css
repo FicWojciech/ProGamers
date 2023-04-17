@@ -222,6 +222,11 @@ header .fa-chevron-down {
   flex-direction: row;
   justify-content: space-around;
 }
+.team .card-img-top {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media (min-width: 375px) {
   header h1 {
