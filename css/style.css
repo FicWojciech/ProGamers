@@ -222,10 +222,26 @@ header .fa-chevron-down {
   flex-direction: row;
   justify-content: space-around;
 }
-.team .card-img-top {
+.team h2 {
+  color: #ebecf2;
+}
+.team .card {
+  transition: transform ease-in-out 0.4s;
+  width: 300px;
+}
+.team .card:hover {
+  transform: scale(0.9);
+}
+.team .card-body {
   height: 300px;
+  text-align: center;
+  padding: 15px 10px;
+}
+.team .card-img-top {
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 375px) {
