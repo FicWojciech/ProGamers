@@ -256,6 +256,27 @@ header .fa-chevron-down {
   flex-direction: row;
   justify-content: space-around;
 }
+.team .card-body {
+  height: 160px;
+}
+
+.achivments i {
+  padding: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+}
+.achivments .achivments-list {
+  background-color: #ebecf2;
+  padding: 20px 0;
+}
+.achivments .achivment-number {
+  font-size: 22px;
+}
+.achivments .achivment-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
 
 @media (min-width: 375px) {
   header h1 {
