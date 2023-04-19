@@ -278,6 +278,36 @@ header .fa-chevron-down {
   text-transform: uppercase;
 }
 
+.contact {
+  position: relative;
+  background-image: url("/IMG/skyline-1869214_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  color: #fff;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 9, 49, 0.8);
+  z-index: -5;
+}
+.contact h3 {
+  text-transform: uppercase;
+}
+.contact .fab {
+  font-size: 30px;
+  color: #fff;
+  transition: color 0.2s;
+}
+.contact .fab:hover {
+  color: #039dff;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
