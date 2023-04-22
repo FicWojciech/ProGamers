@@ -76,7 +76,7 @@ h2 {
 	background-position: center;
 	background-size: cover;
 	color: $white-color;
-	z-index: 5;
+	z-index: 0111;
 	.aboutus-shadow {
 		position: absolute;
 		top: 0;
@@ -232,7 +232,6 @@ header {
 	position: relative;
 	background-image: url('/IMG/team/room-2192484_1920.jpg');
 	background-size: cover;
-	background-position: center;
 	background-attachment: fixed;
 	z-index: 0;
 	h2 {
@@ -248,7 +247,6 @@ header {
 	}
 	.card {
 		transition: transform ease-in-out 0.4s;
-		text-align: center;
 		img {
 			height: 300px;
 			object-fit: cover;
@@ -260,14 +258,18 @@ header {
 	.card:hover {
 		transform: scale(0.9);
 	}
-	.card-footer {
-		text-align: center;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
 	.card-body {
 		height: 160px;
+	}
+	.card-title {
+		margin-bottom: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.card-text {
+		p {
+			font-size: 16px;
+		}
 	}
 }
 
@@ -341,6 +343,9 @@ header {
 			font-size: 16px;
 		}
 	}
+	.card-text {
+		font-size: 12px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -351,6 +356,9 @@ header {
 		p {
 			font-size: 20px;
 		}
+	}
+	.card-text {
+		font-size: 14px;
 	}
 }
 

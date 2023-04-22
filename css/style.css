@@ -115,7 +115,7 @@ h2 {
   background-position: center;
   background-size: cover;
   color: #fff;
-  z-index: 5;
+  z-index: 111;
 }
 .aboutus-hero .aboutus-shadow {
   position: absolute;
@@ -263,7 +263,6 @@ header .fa-chevron-down {
   position: relative;
   background-image: url("/IMG/team/room-2192484_1920.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   z-index: 0;
 }
@@ -280,7 +279,6 @@ header .fa-chevron-down {
 }
 .team .card {
   transition: transform ease-in-out 0.4s;
-  text-align: center;
 }
 .team .card img {
   height: 300px;
@@ -293,14 +291,16 @@ header .fa-chevron-down {
 .team .card:hover {
   transform: scale(0.9);
 }
-.team .card-footer {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 .team .card-body {
   height: 160px;
+}
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team .card-text p {
+  font-size: 16px;
 }
 
 .achivments i {
@@ -365,6 +365,9 @@ header .fa-chevron-down {
   header p {
     font-size: 16px;
   }
+  .card-text {
+    font-size: 12px;
+  }
 }
 @media (min-width: 768px) {
   header h1 {
@@ -372,6 +375,9 @@ header .fa-chevron-down {
   }
   header p {
     font-size: 20px;
+  }
+  .card-text {
+    font-size: 14px;
   }
 }
 @media (min-width: 992px) {
