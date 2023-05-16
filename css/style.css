@@ -385,7 +385,7 @@ header .fa-chevron-down {
     height: 82px;
   }
   .aboutus-hero {
-    background-image: url(/IMG/procesor-large.jpg);
+    background-image: url("/IMG/procesor-large.jpg");
   }
   .price-box p,
   .more-info p,
@@ -395,6 +395,6 @@ header .fa-chevron-down {
 }
 @media (min-width: 1200px) {
   header .hero-img {
-    background-image: url(/IMG/PlayStationLarge.jpg);
+    background-image: url("/IMG/PlayStationLarge.jpg");
   }
 }/*# sourceMappingURL=style.css.map */
