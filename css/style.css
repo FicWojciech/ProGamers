@@ -111,7 +111,7 @@ h2 {
 
 .aboutus-hero {
   position: relative;
-  background-image: url(./IMG/procesor-small.jpg);
+  background-image: url("/IMG/procesor-small.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -197,7 +197,7 @@ header p {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url(/IMG/PlayStationSmall.jpg);
+  background-image: url("/IMG/PlayStationSmall.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
