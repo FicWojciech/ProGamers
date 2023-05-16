@@ -111,7 +111,7 @@ h2 {
 
 .aboutus-hero {
   position: relative;
-  background-image: url(/IMG/procesor-small.jpg);
+  background-image: url(./IMG/procesor-small.jpg);
   background-position: center;
   background-size: cover;
   color: #fff;
