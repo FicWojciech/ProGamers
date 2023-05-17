@@ -233,7 +233,7 @@ header {
 	background-image: url('./IMG/team/room-2192484_1920.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	z-index: 0;
+	z-index: 1;
 	h2 {
 		color: $bg-color;
 	}
@@ -367,7 +367,7 @@ header {
 		height: 82px;
 	}
 	.aboutus-hero {
-		background-image: url('./IMG/team/procesor-large.jpg');
+		background-image: url('/IMG/team/procesor-large.jpg');
 	}
 	.price-box,
 	.more-info,
@@ -381,7 +381,7 @@ header {
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
-			background-image: url('./IMG/team/PlayStationLarge.jpg');
+			background-image: url('/IMG/team/PlayStationLarge.jpg');
 		}
 	}
 }
