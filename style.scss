@@ -72,7 +72,7 @@ h2 {
 
 .aboutus-hero {
 	position: relative;
-	background-image: url('./IMG//team/procesor-small.jpg');
+	background-image: url('/procesor-small.jpg');
 	background-position: center;
 	background-size: cover;
 	color: $white-color;
@@ -163,7 +163,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url('./IMG/team/PlayStationSmall.jpg');
+		background-image: url('/PlayStationSmall.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -230,7 +230,7 @@ header {
 
 .team {
 	position: relative;
-	background-image: url('./IMG/team/room-2192484_1920.jpg');
+	background-image: url('/room-2192484_1920.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 1;
@@ -295,7 +295,7 @@ header {
 
 .contact {
 	position: relative;
-	background-image: url('./IMG/skyline-1869214_1920.jpg');
+	background-image: url('/skyline-1869214_1920.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -367,7 +367,7 @@ header {
 		height: 82px;
 	}
 	.aboutus-hero {
-		background-image: url('/IMG/team/procesor-large.jpg');
+		background-image: url('/procesor-large.jpg');
 	}
 	.price-box,
 	.more-info,
@@ -381,7 +381,7 @@ header {
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
-			background-image: url('/IMG/team/PlayStationLarge.jpg');
+			background-image: url('/PlayStationLarge.jpg');
 		}
 	}
 }
