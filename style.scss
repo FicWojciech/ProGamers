@@ -76,7 +76,7 @@ h2 {
 	background-position: center;
 	background-size: cover;
 	color: $white-color;
-	z-index: 0111;
+	z-index: 111;
 	.aboutus-shadow {
 		position: absolute;
 		top: 0;
@@ -167,7 +167,7 @@ header {
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
-		z-index: 0;
+		z-index: 1;
 	}
 	.hero-shadow {
 		position: absolute;
