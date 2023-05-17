@@ -72,7 +72,7 @@ h2 {
 
 .aboutus-hero {
 	position: relative;
-	background-image: url('./IMG/procesor-small.jpg');
+	background-image: url('./IMG//team/procesor-small.jpg');
 	background-position: center;
 	background-size: cover;
 	color: $white-color;
@@ -163,7 +163,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url('./IMG/PlayStationSmall.jpg');
+		background-image: url('./IMG/team/PlayStationSmall.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -367,7 +367,7 @@ header {
 		height: 82px;
 	}
 	.aboutus-hero {
-		background-image: url('./IMG/procesor-large.jpg');
+		background-image: url('./IMG/team/procesor-large.jpg');
 	}
 	.price-box,
 	.more-info,
@@ -381,7 +381,7 @@ header {
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
-			background-image: url('./IMG/PlayStationLarge.jpg');
+			background-image: url('./IMG/team/PlayStationLarge.jpg');
 		}
 	}
 }
