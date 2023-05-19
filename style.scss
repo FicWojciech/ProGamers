@@ -1,4 +1,4 @@
-@import 'colors';
+@import '_colors';
 @import '_animate';
 *,
 *::before,
@@ -16,6 +16,7 @@ body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     background-color: $bg-color;
+    font-size: 16px;
 }
 
 h2 {
@@ -30,13 +31,6 @@ h2 {
     background-color: $main-color;
 }
 
-.underline-silver {
-    margin: 0 auto 40px;
-    width: 50%;
-    height: 4px;
-    background-color: $under-color;
-}
-
 .blue-text {
     color: $main-color;
 }
@@ -45,114 +39,35 @@ h2 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.btn-secondary:hover {
-    background-color: $main-color;
-    border-color: $main-color;
-}
-
-.aboutus {
-    i {
-        margin-top: 20px;
-        font-size: 30px;
-    }
-    .aboutus-card-title {
-        font-size: 18px;
-        text-transform: uppercase;
-    }
-    .aboutus-card-text {
-        font-size: 14px;
-    }
-    .aboutus-hover {
-        transition: color 0.4s;
-    }
-    .aboutus-hover:hover {
-        color: $main-color;
-    }
-}
-
-.aboutus-hero {
-    position: relative;
-    background-image: url('/IMG/procesor-small.jpg');
-    background-position: center;
-    background-size: cover;
-    color: $white-color;
-    z-index: 0111;
-    .aboutus-shadow {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: -11;
-    }
-    .aboutus-hero-item {
-        margin: 10px 0;
-        i {
-            font-size: 36px;
-        }
-        .aboutus-hero-title {
-            font-size: 24px;
-        }
-    }
-}
-
-.portfolio {
-    .carousel-item {
-        position: realtive;
-        height: 600px;
-    }
-    .carousel-caption {
-        position: absolute;
-        left: 0;
-        right: 0;
-        padding: 40px 0;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .carousel-indicators {
-        padding-bottom: 20px;
-    }
-}
-
-.specification {
-    li {
-        list-style: none;
-    }
-}
-
 nav {
     text-transform: uppercase;
-    z-index: 16;
-    transition: background-color 2s;
-    .navbar-brand {
-        color: $white-color;
-        font-weight: bold;
-    }
-    .navbar-brand:hover {
-        color: $main-color;
-    }
-    .nav-link,
+    transition: background-color 0.6s;
+    z-index: 1;
+    a,
     i {
-        color: $white-color;
+        color: $white;
     }
-    .nav-link:hover {
+    a:hover {
         color: $main-color;
     }
     .fa-bars {
         padding: 10px;
     }
-    span {
-        color: $main-color;
+    .navbar-brand {
+        font-weight: bold;
+        color: white;
     }
-}
-
-.navbar {
-    .nav-link.active {
+    .nav-link {
+        color: $white;
+        transition: color 0.3s;
+    }
+    .nav-link:hover {
         color: $main-color;
     }
 }
 
 header {
-    color: $white-color;
+    color: $white;
     h1 {
         font-size: 30px;
         text-transform: uppercase;
@@ -185,59 +100,50 @@ header {
         padding: 10px;
         text-align: center;
         z-index: 5;
+        color: $white;
     }
     .btn-outline-light {
         text-transform: uppercase;
     }
     .fa-chevron-down {
         position: absolute;
-        bottom: 20px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
+        bottom: 20px;
         font-size: 30px;
-        color: $white-color;
+        color: $white;
     }
 }
 
-.prices {
-    h3 {
-        color: $main-color;
+.aboutus {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .aboutus-card-title {
+        font-size: 18px;
         text-transform: uppercase;
     }
-    span {
-        font-weight: bold;
+    .aboutus-card-text {
+        font-size: 14px;
     }
-    .price-tag {
-        font-weight: bold;
-        font-size: 22px;
+    .aboutus-hover {
+        transition: color 0.3s;
     }
-    .more-info,
-    .text-muted {
-        text-align: center;
-    }
-    .more-info a {
-        text-decoration: none;
-    }
-    .price-box {
-        padding: 15px;
-        box-shadow: 4px 3px 3px 3px rgb(160, 151, 151);
-        transition: transform ease-in-out 0.4s;
-    }
-    .price-box:hover {
-        transform: scale(1.05);
+    .aboutus-hover:hover {
+        color: $main-color;
     }
 }
 
-.team {
+.aboutus-hero {
     position: relative;
-    background-image: url('/IMG/team/room-2192484_1920.jpg');
+    background-image: url('/IMG/procesor-small.jpg');
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    color: $light-gray;
     z-index: 0;
-    h2 {
-        color: $bg-color;
-    }
-    .team-shadow {
+    .aboutus-shadow {
         position: absolute;
         top: 0;
         width: 100%;
@@ -245,8 +151,94 @@ header {
         background-color: rgba(0, 0, 0, 0.7);
         z-index: -5;
     }
+    .aboutus-hero-item {
+        margin: 10px 0;
+        i {
+            font-size: 36px;
+        }
+        .aboutus-hero-title {
+            font-size: 24px;
+        }
+    }
+}
+
+.portfolio {
+    .carousel-item {
+        position: relative;
+        height: 600px;
+    }
+    .carousel-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .carousel-indicators {
+        padding-bottom: 20px;
+    }
+}
+
+.prices {
+    .price-box {
+        margin: 20px 10px;
+        padding: 30px;
+        background-color: $white;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s;
+        h3 {
+            color: $main-color;
+            text-transform: uppercase;
+        }
+        span {
+            font-weight: bold;
+        }
+        i {
+            padding: 0 5px;
+            font-size: 24px;
+        }
+        button {
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+        .price-tag {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+    .price-box:hover {
+        transform: scale(1.05);
+    }
+    .price-info {
+        margin-top: 30px;
+        a {
+            text-decoration: none;
+        }
+    }
+    .btn-secondary:hover {
+        background-color: $main-color;
+    }
+}
+
+.team {
+    position: relative;
+    background-image: url('/IMG/room-2192484_1920.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    h2 {
+        color: $light-gray;
+    }
+    .team-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -5;
+    }
     .card {
-        transition: transform ease-in-out 0.4s;
+        transition: transform 0.3s;
         img {
             height: 300px;
             object-fit: cover;
@@ -256,38 +248,32 @@ header {
         }
     }
     .card:hover {
-        transform: scale(0.9);
-    }
-    .card-body {
-        height: 160px;
+        transform: scale(0.96);
     }
     .card-title {
         margin-bottom: 20px;
         text-align: center;
         text-transform: uppercase;
     }
-    .card-text {
-        p {
-            font-size: 16px;
-        }
+    .card-body {
+        height: 160px;
     }
 }
 
-.achivments {
+.achievements {
     i {
         padding: 10px;
         font-size: 48px;
-        color: $white-color;
-        text-shadow: 0 0 2px #000;
+        color: $white;
+        text-shadow: 0 0 5px #000;
     }
-    .achivments-list {
-        background-color: $bg-color;
+    .achievements-list {
         padding: 20px 0;
     }
-    .achivment-number {
+    .achievement-number {
         font-size: 22px;
     }
-    .achivment-text {
+    .achievement-text {
         font-size: 13px;
         text-transform: uppercase;
     }
@@ -296,39 +282,51 @@ header {
 .contact {
     position: relative;
     background-image: url('/IMG/skyline-1869214_1920.jpg');
-    background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
+    background-size: cover;
     z-index: 0;
-    color: $white-color;
+    h2 {
+        color: $light-gray;
+        font-weight: bold;
+    }
+    .underline {
+        background-color: $light-gray;
+    }
     .contact-shadow {
         position: absolute;
         top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(6, 9, 49, 0.8);
+        background-color: rgba(0, 9, 27, 0.85);
         z-index: -5;
     }
     .contact-us {
-        align-items: center;
         display: flex;
-    }
-    .contact-item {
-        h3 {
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-        }
-        .social-media {
-            a {
-                font-size: 30px;
-                padding: 10px;
-                transition: color 0.2s;
-                color: $white-color;
+        align-items: center;
+        color: $white;
+        .contact-item {
+            margin: 30px 0;
+            h3 {
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
             }
-            a:hover {
-                color: $main-color;
+            .social-media {
+                font-size: 26px;
+                a {
+                    padding: 10px;
+                    color: $white;
+                }
+                a:hover {
+                    color: $light-gray;
+                }
+                .fab {
+                    transition: color 0.4s;
+                }
+                .fab:hover {
+                    color: $main-color;
+                }
             }
         }
     }
@@ -343,8 +341,10 @@ header {
             font-size: 16px;
         }
     }
-    .card-text {
-        font-size: 12px;
+    .team {
+        .card-text {
+            font-size: 12px;
+        }
     }
 }
 
@@ -357,8 +357,10 @@ header {
             font-size: 20px;
         }
     }
-    .card-text {
-        font-size: 14px;
+    .team {
+        .card-text {
+            font-size: 14px;
+        }
     }
 }
 
@@ -369,11 +371,14 @@ header {
     .aboutus-hero {
         background-image: url('/IMG/procesor-large.jpg');
     }
-    .price-box,
-    .more-info,
-    .text-muted {
-        p {
+    .prices {
+        .price-info {
             font-size: 18px;
+        }
+    }
+    .team {
+        .card-text {
+            font-size: 14px;
         }
     }
 }
@@ -382,6 +387,11 @@ header {
     header {
         .hero-img {
             background-image: url('/IMG/PlayStationLarge.jpg');
+        }
+    }
+    .team {
+        .card-text {
+            font-size: 16px;
         }
     }
 }
