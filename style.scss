@@ -64,9 +64,10 @@ nav {
 	.nav-link:hover {
 		color: $main-color;
 	}
-	.active {
-		color: $main-color;
-	}
+}
+
+.navbar-nav .nav-link.active {
+	color: $main-color;
 }
 
 header {
